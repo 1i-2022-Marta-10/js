@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABLICE</title>
+</head>
+<body>
+    <script>
+        const numbers = [];
+        numbers[0] = 3;
+        numbers[1] = 6;
+        numbers[2] = 39;
+        numbers[3] = 4;
+
+        numbers[0] = 'kjsddfdfjhsdf';
+
+        document.write(numbers);
+
+        document.write('<p> długość tablicy: '+ numbers.length +'</p>');
+        document.write(`<p> długość tablicy: ${numbers.length} </p>`);
+
+        document.write(`<p> dodaje element na koncu tablicy: ${numbers[numbers.length]=7} </p>`);
+        document.write(`<p> moja tablica: ${numbers} </p>`);
+
+        document.write(`<p> usuwam ostatni element tablicy czyli: ${numbers.pop()} </p>`);
+        document.write(`<p> usuwam pierwszy element tablicy czyli: ${numbers.shift()} </p>`);
+        document.write(`<p> długość tablicy: ${numbers.length} </p>`);
+
+        document.write(`<p> dodaje element na koncu tablicy czyli: ${numbers.push('asfadad')} </p>`);
+        document.write(`<p> dodaje element na początku tablicy czyli: ${numbers.unshift(26)} </p>`);
+
+        document.write(`<p> długość tablicy: ${numbers.length} </p>`);
+        document.write(`<p> moja tablica: ${numbers} </p>`);
+
+    </script>
+</body>
+</html>
