@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>FUNKCJE W JS</h1>
+        </header>
+        <main>
+            <script>
+                
+                //function printGreeting(greeting, userName){
+                 //   document.write(`<p> ${greeting} ${userName}!</p>`)
+               // }
+              //  printGreeting('czesc', 'grzes');
+               // printGreeting('hej', 'monika');
+
+
+
+                function printGreeting(greeting, userName){
+                   return (`<p> ${greeting} ${userName}!</p>`)
+                }
+                console.log(printGreeting('czesc', 'grzes'));
+                printGreeting('hej', 'monika');
+
+
+
+                
+                function printGreeting(greeting, userName){
+                   return (`<p> ${greeting} ${userName}!</p>`)
+                }
+                console.log(printGreeting('czesc', prompt('podaj imie')));
+
+
+
+                const Name = prompt('podaj imie:')
+                function greetingUsername(Name){
+                    document.write(`<p> hej ${Name}! </p>`)
+                }
+                greetingUsername(Name)
+                
+
+                //kalkulator z funkcja gdzie user podaje 2 liczby 
+                //i znak dzialania awynik ma byc przekazany do metody document.write
+                //3 parametry bo 2 liczby i znak 
+
+            </script>
+
+        </main>
+        <footer>
+            <p>aaaa</p>
+        </footer>
+    </div>
+</body>
+</html>
