@@ -14,33 +14,13 @@
         <main>
             <script>
                 
-               const num1
-               const num2
-               const indi
-
-               function dod(num1,num2){
-                   result = num1+num2
-                   docuemnt.write(`wynik dodawania wynosi: ${result}`)
-               }
-
-               function odj(num1,num2){
-                   result = num1-num2
-                   docuemnt.write(`wynik dodawania wynosi: ${result}`)
-               }
-
-               function mno(num1,num2){
-                   result = num1*num2
-                   docuemnt.write(`wynik dodawania wynosi: ${result}`)
-               }
-
-               function dzi(num1,num2){
-                   result = num1/num2
-                   docuemnt.write(`wynik dodawania wynosi: ${result}`)
-
-               }
+               var num1
+               var num2
+               var indi
+                var result
 
                function calc(indi){
-                   while (indi != "+" || "-" || "*" || "/"){
+                   if (indi != "+" || "-" || "*" || "/"){
                        indi = prompt("podaj znak dzialania: ")
                    
                    }
@@ -49,21 +29,21 @@
                         num1 = parseFloat(prompt('podaj pierwsza liczbe'))
                         num2 = parseFloat(prompt('podaj druga liczbe'))
                         result = num1 + num2
-                        document.wirte(`wynik dodawania: ${result}`)
+                        document.write(`wynik dodawania: ${result}`)
                    }
 
                    else if(indi == "-"){
                         num1 = parseFloat(prompt('podaj pierwsza liczbe'))
                         num2 = parseFloat(prompt('podaj druga liczbe'))
                         result = num1 - num2
-                        document.wirte(`wynik odejmowania: ${result}`)
+                        document.write(`wynik odejmowania: ${result}`)
                    }
                  
                    else if(indi == "*"){
                         num1 = parseFloat(prompt('podaj pierwsza liczbe'))
                         num2 = parseFloat(prompt('podaj druga liczbe'))
                         result = num1 * num2
-                        document.wirte(`wynik mnozenia: ${result}`)
+                        document.write(`wynik mnozenia: ${result}`)
                    }
 
                    else if(indi == "/"){
@@ -73,7 +53,7 @@
                        while (num2 ==0){
                            num2 = parseFloat(prompt(`podaj druga liczbe rozna od zera`)
                         result = num1/num2
-                        document.wirte(`wynik dzielenia: ${result}`)
+                        document.write(`wynik dzielenia: ${result}`)
                    }
                }
                 else{
