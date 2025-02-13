@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>FUNKCJE W JS</h1>
+        </header>
+        <main>
+            <script>
+                
+               const num1
+               const num2
+               const indi
+
+               function dod(num1,num2){
+                   result = num1+num2
+                   docuemnt.write(`wynik dodawania wynosi: ${result}`)
+               }
+
+               function odj(num1,num2){
+                   result = num1-num2
+                   docuemnt.write(`wynik dodawania wynosi: ${result}`)
+               }
+
+               function mno(num1,num2){
+                   result = num1*num2
+                   docuemnt.write(`wynik dodawania wynosi: ${result}`)
+               }
+
+               function dzi(num1,num2){
+                   result = num1/num2
+                   docuemnt.write(`wynik dodawania wynosi: ${result}`)
+
+               }
+
+               function calc(indi){
+                   while (indi != "+" || "-" || "*" || "/"){
+                       indi = prompt("podaj znak dzialania: ")
+                   
+                   }
+
+                   if(indi == "+"){
+                        num1 = parseFloat(prompt('podaj pierwsza liczbe'))
+                        num2 = parseFloat(prompt('podaj druga liczbe'))
+                        result = num1 + num2
+                        document.wirte(`wynik dodawania: ${result}`)
+                   }
+
+                   else if(indi == "-"){
+                        num1 = parseFloat(prompt('podaj pierwsza liczbe'))
+                        num2 = parseFloat(prompt('podaj druga liczbe'))
+                        result = num1 - num2
+                        document.wirte(`wynik odejmowania: ${result}`)
+                   }
+                 
+                   else if(indi == "*"){
+                        num1 = parseFloat(prompt('podaj pierwsza liczbe'))
+                        num2 = parseFloat(prompt('podaj druga liczbe'))
+                        result = num1 * num2
+                        document.wirte(`wynik mnozenia: ${result}`)
+                   }
+
+                   else if(indi == "/"){
+                        num1 = parseFloat(prompt('podaj pierwsza liczbe'))
+                        num2 = parseFloat(prompt('podaj druga liczbe'))
+                        result = num1/num2
+                        document.wirte(`wynik dzielenia: ${result}`)
+                   }
+               }
+
+               calc(indi)
+
+            </script>
+
+        </main>
+        <footer>
+            <p>aaaa</p>
+        </footer>
+    </div>
+</body>
+</html>
